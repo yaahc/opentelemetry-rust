@@ -2,6 +2,10 @@
 
 ## vNext
 
+- An error recorded as a tracing field, e.g. `error = &err as &dyn Error`, now
+  also sets `exception.cause.messages` to the message of each of its sources,
+  in order, when it has any.
+
 ## 0.33.1
 
 Released 2026-Oct-08
