@@ -2,6 +2,11 @@
 
 ## vNext
 
+- An error recorded as a tracing field, e.g. `error = &err as &dyn Error`, now
+  sets `exception.message` to the error's message followed by the message of
+  each of its sources, separated by `": "`, instead of only the error's own
+  message.
+
 ## 0.33.1
 
 Released 2026-Oct-08
